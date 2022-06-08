@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Add Book Details"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        //bookID field
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookIdTitleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Book ID"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/darkgray" />
+
+        <ImageView
+            android:id="@+id/addPhotoIV"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_add_a_photo_24" />
+        //Book Title field
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookTitleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Book Title"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/darkgray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bookTitleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/beige"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //book genre field
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookGenreTitleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Book Genre"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/darkgray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bookGenretitleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/beige"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //book price field
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookPriceTitleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Book Price"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/darkgray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bookPricetitleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/beige"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //book Stack field
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookStackTitleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Book Stock"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/darkgray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bookStocktitleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/beige"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //add button
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="sans-serif"
+            android:text="ADD"
+            android:textAllCaps="true"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

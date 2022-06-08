@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "858684144270",
+    "firebase_url": "https://turtogafinal-default-rtdb.firebaseio.com",
+    "project_id": "turtogafinal",
+    "storage_bucket": "turtogafinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858684144270:android:6108f2fecce8b5b19427df",
+        "android_client_info": {
+          "package_name": "com.example.turtogacrudfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858684144270-0tfbqjh30dni1hg0lgfitpml0ue475i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_UuaS9Hm4y4t-dDn3-w2WvL02NleugY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858684144270-0tfbqjh30dni1hg0lgfitpml0ue475i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858684144270:android:72ed92a3428308209427df",
+        "android_client_info": {
+          "package_name": "com.example.turtogafinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858684144270-0tfbqjh30dni1hg0lgfitpml0ue475i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_UuaS9Hm4y4t-dDn3-w2WvL02NleugY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858684144270-0tfbqjh30dni1hg0lgfitpml0ue475i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
