@@ -73,25 +73,25 @@ public class EditUpdateActivity extends AppCompatActivity {
             updateButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-try{
-    book.setBookTitle(bookTitleEdit.getText().toString());
-    book.setBookGenre(bookGenretitleEdit.getText().toString());
-    book.setBookPrice(Double.parseDouble(bookPricetitleEdit.getText().toString()));
-    book.setBookStock(Double.parseDouble(bookStocktitleEdit.getText().toString()));
+                    try{
+                        book.setBookTitle(bookTitleEdit.getText().toString());
+                        book.setBookGenre(bookGenretitleEdit.getText().toString());
+                        book.setBookPrice(Double.parseDouble(bookPricetitleEdit.getText().toString()));
+                        book.setBookStock(Double.parseDouble(bookStocktitleEdit.getText().toString()));
 
-}catch (Exception e){
-    AlertDialog.Builder alert = new AlertDialog.Builder(EditUpdateActivity.this);
-    alert.setCancelable(false);
-    alert.setTitle("Error!");
-    alert.setMessage("Please input correct value.");
-    alert.setPositiveButton("Okay", null);
-    alert.show();
-}
+                    }catch (Exception e){
+                        AlertDialog.Builder alert = new AlertDialog.Builder(EditUpdateActivity.this);
+                        alert.setCancelable(false);
+                        alert.setTitle("Error!");
+                        alert.setMessage("Please input correct value.");
+                        alert.setPositiveButton("Okay", null);
+                        alert.show();
+                    }
 
                     if (!book.getBookTitle().isEmpty() && !book.getBookGenre().isEmpty() && !book.getBookImage().toString().isEmpty()
                             && book.getBookPrice() >= 0 && book.getBookStock() >= 0){
                         ProgressDialog progressDialog = new ProgressDialog(EditUpdateActivity.this);
-                        progressDialog.setMessage("Uploalding, Please wait...");
+                        progressDialog.setMessage("Updating, Please wait...");
                         progressDialog.setCancelable(false);
                         progressDialog.show();
                         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -121,7 +121,7 @@ try{
                                             progressDialog.dismiss();
                                             if (task.isSuccessful())
                                             {
-                                                Toast.makeText(EditUpdateActivity.this, "Book successfully added!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(EditUpdateActivity.this, "Book successfully updated!", Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(getApplicationContext(), MenuActivity.class));
                                             }
                                             else

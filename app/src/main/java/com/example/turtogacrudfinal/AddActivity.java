@@ -119,7 +119,7 @@ public class AddActivity extends AppCompatActivity {
         if (!b.getBookTitle().isEmpty() && !b.getBookGenre().isEmpty() && !imageUri.toString().isEmpty()
                 && b.getBookPrice() >= 0 && b.getBookStock() >= 0){
             ProgressDialog progressDialog = new ProgressDialog(this);
-            progressDialog.setMessage("Uploalding, Please wait...");
+            progressDialog.setMessage("Uploading, Please wait...");
             progressDialog.setCancelable(false);
             progressDialog.show();
             FirebaseFirestore db = FirebaseFirestore.getInstance();
